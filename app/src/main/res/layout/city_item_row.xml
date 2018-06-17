@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    android:background="@color/colorAccent"
+    >
+
+    <TextView
+        android:id="@+id/city_bane_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/default_city_name"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#00ccff"
+        android:gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        android:textSize="@dimen/default_txt_size"
+        android:textColorLink="#8DE67F"
+        />
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTrk"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/today_forecast_list_item_vertical_padding"
+    android:paddingTop="@dimen/today_forecast_list_item_vertical_padding"
+    android:weightSum="30">
+
+
+    <TextView
+        android:id="@+id/city_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/default_txt_size"
+        android:layout_weight="10"
+        android:background="@color/colorAccent"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_txt_size"
+        android:textStyle="bold"
+        tools:text="@string/default_city_name" />
+
+
+    <TextView
+        android:id="@+id/high_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_weight="10"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        android:textSize="72sp"
+        tools:text="19\u00b0" />
+
+    <TextView
+        android:id="@+id/low_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="10"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="@+id/high_temperature"
+        app:layout_constraintRight_toRightOf="@+id/high_temperature"
+        tools:text="10\u00b0" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/weather_progress_bar"
+        />
+</LinearLayout>

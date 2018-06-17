@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">QwesysAndroidTask</string>
+    <string name="facebook_app_id">161846604560352</string>
+    <string name="fb_login_protocol_scheme">fb161846604560352</string>
+    <string name="NO_Internet_Error">Weak Connection</string>
+    <string name="add_new_city">Add New City</string>
+    <string name="city_name">Enter City Name</string>
+    <string name="default_city_name">Cairo</string>
+    <string name="done">Done</string>
+    <string name="cancel">cancel</string>
+    <string name="success">Success</string>
+    <string name="cities_list_title">Cities</string>
+    <string name="faill_save_error">Failled To Save</string>
+    <string name="city_obj_key">CityKey</string>
+    <string name="api_key" translatable="false">bd5e378503939ddaee76f12ad7a97608</string>
+    <string name="sky">Rainy</string>
+    <string name="max">Max</string>
+    <string name="min">Min</string>
+
+
+</resources>
