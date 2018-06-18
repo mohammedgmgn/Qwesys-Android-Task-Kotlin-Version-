@@ -2,14 +2,10 @@ package com.mahmoud.mohammed.qwesysandroidtask.DataLayer.Local.Model
 
 import android.os.Parcel
 import android.os.Parcelable
-
 import com.mahmoud.mohammed.qwesysandroidtask.DataLayer.Local.RealmQueries
-
-import java.util.UUID
-
-import io.realm.Realm
 import io.realm.RealmObject
 import io.realm.annotations.PrimaryKey
+import java.util.*
 
 public open class CityModel : RealmObject, Parcelable {
     @PrimaryKey
@@ -41,6 +37,7 @@ public open class CityModel : RealmObject, Parcelable {
         this.cityId = `in`.readString()
         this.cityName = `in`.readString()
     }
+
     companion object CREATOR : Parcelable.Creator<CityModel> {
         override fun createFromParcel(source: Parcel): CityModel {
             return CityModel(source)
@@ -52,18 +49,6 @@ public open class CityModel : RealmObject, Parcelable {
         }
 
 
-        }
+    }
 
-    /*companion object {
-
-        val CREATOR: Parcelable.Creator<CityModel> = object : Parcelable.Creator<CityModel> {
-            override fun createFromParcel(source: Parcel): CityModel {
-                return CityModel(source)
-            }
-
-            override fun newArray(size: Int): Array<CityModel?> {
-                return arrayOfNulls(size)
-            }
-        }
-    }*/
 }
